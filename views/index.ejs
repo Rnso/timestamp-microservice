@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Timestamp-MS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>Basejump :Timestamp Microservice</h1>
+  <p>
+    <strong>User Story:</strong> I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).
+  </p>
+  <p>
+    <strong>User Story:</strong> If it does, it returns both the Unix timestamp and the natural language form of that date.
+  </p>
+  <p>
+    <strong>User Story:</strong>  If it does not contain a date or Unix timestamp, it returns null for those properties.
+  </p>
+  <br/>
+  <h3>Example Usage:</h3>
+    <p>
+      https://microservice-timestamp.glitch.me/14%20august%202017 <br/>
+      https://microservice-timestamp.glitch.me/867865864574 <br/>
+      https://microservice-timestamp.glitch.me/test
+  </p>
+  <h3>Example Usage:</h3>
+    <p>
+     {"unix":"1502668800000","natural":"August 14, 2017"}<br/>
+      {"unix":"867865864574","natural":"July 29, 29471"}<br/>
+      {"unix":null,"natural":null}
+  </p>
+  
+    </body>
+
+</html>
